@@ -2,25 +2,25 @@ var faker = require('faker')
 
 function randomNumberBetween1To5()
 {
-  return Math.floor(Math.random() * 5) + 1;
+  return faker.random.number({min:1, max:5});
 }
 
 function getRandomLocation()
 {
   var locations = ["BANGLORE","CHENNAI","MUMBAI","HYDERABAD","PUNE","GURUGRAM","LONDON","PARIS"]
 
-  return locations[Math.floor(Math.random() * locations.length)];
+  return faker.random.arrayElement(locations);
 }
 
 function getRandomRole()
 {
   var roles = ["QA", "BA", "DEV", "PM"]
   
-  return roles[Math.floor(Math.random() * roles.length)];
+  return faker.random.arrayElement(roles);
 }
 function randomBoolean()
 {
-  return Math.random() >= 0.5;
+  return faker.random.boolean();
 }
 
 function generateStaffs()
