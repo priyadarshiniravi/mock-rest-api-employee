@@ -1,0 +1,19 @@
+{
+  "name": "mock-rest-api-employee",
+  "version": "1.0.0",
+  "description": "This is a mock server for employee look-up created using https://github.com/typicode/json-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyadarshiniravi/mock-rest-api-employee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyadarshiniravi/mock-rest-api-employee/issues"
+  },
+  "homepage": "https://github.com/priyadarshiniravi/mock-rest-api-employee#readme"
+}
