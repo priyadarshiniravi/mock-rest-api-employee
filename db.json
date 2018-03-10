@@ -1,0 +1,64 @@
+{
+  "staffs":[
+    {
+      "id": 1,
+      "location": "Pune",
+      "name": "Priya",
+      "role": "DEV",
+      "skill-set":[
+        {
+          "name":"Android",
+          "Rating": 5
+        },
+        {
+          "name":"Java",
+          "Rating": 5
+        }
+      ],
+      "travel-preference": {
+        "Domestic": false,
+        "International": false
+      }
+    },
+    {
+      "id": 2,
+      "location": "Pune",
+      "name": "Uday",
+      "role": "DEV",
+      "skill-set":[
+        {
+          "name":"React",
+          "Rating": 5
+        },
+        {
+          "name":"Redux",
+          "Rating": 5
+        }
+      ],
+      "travel-preference": {
+        "Domestic": false,
+        "International": false
+      }
+    },
+    {
+      "id": 3,
+      "location": "Chennai",
+      "name": "Ravi",
+      "role": "DEV",
+      "skill-set":[
+        {
+          "name":"React",
+          "Rating": 5
+        },
+        {
+          "name":"Redux",
+          "Rating": 5
+        }
+      ],
+      "travel-preference": {
+        "Domestic": false,
+        "International": false
+      }
+    }    
+  ]
+}
