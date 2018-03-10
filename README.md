@@ -31,3 +31,4 @@ Few Examples:
 * http://localhost:3000/staffs?location=Pune
 * http://localhost:3000/staffs
 * http://localhost:3000/staffs/1
+* Including Fuzzy Search http://localhost:3000/staffs?q=Priya
