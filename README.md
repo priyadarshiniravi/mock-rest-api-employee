@@ -32,3 +32,9 @@ Few Examples:
 * http://localhost:3000/staffs
 * http://localhost:3000/staffs/1
 * Including Fuzzy Search http://localhost:3000/staffs?q=Priya
+* Can also use most Rest feature including GET, PUT, POST, DELETE etc
+
+#Running the app with fake data
+* To generate lot of fake data faker is used
+* staff.js uses faker to generate data
+* to start server with fake data run - `json-server staffs.js`
