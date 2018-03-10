@@ -5,6 +5,24 @@ function randomNumberBetween1To5()
   return Math.floor(Math.random() * 5) + 1;
 }
 
+function getRandomLocation()
+{
+  var locations = ["BANGLORE","CHENNAI","MUMBAI","HYDERABAD","PUNE","GURUGRAM","LONDON","PARIS"]
+
+  return locations[Math.floor(Math.random() * locations.length)];
+}
+
+function getRandomRole()
+{
+  var roles = ["QA", "BA", "DEV", "PM"]
+  
+  return roles[Math.floor(Math.random() * roles.length)];
+}
+function randomBoolean()
+{
+  return Math.random() >= 0.5;
+}
+
 function generateStaffs()
 {
   var staffs = []
@@ -12,29 +30,12 @@ function generateStaffs()
   for(var id = 0; id < 500; id++)
   {
     var name = faker.name.firstName();
-    
-    var locations = [
-       "BANGLORE",
-       "CHENNAI",
-       "MUMBAI",
-       "HYDERABAD",
-       "PUNE",
-       "GURUGRAM",
-       "LONDON",
-       "PARIS"
-    ]
-
-    var randomLocation = locations[Math.floor(Math.random() * locations.length)];
-    
-    var roles = ["QA", "BA", "DEV", "PM"]
-    
-    var randomRole = roles[Math.floor(Math.random() * roles.length)];
         
     staffs.push({
       "id": id,
-      "location": randomLocation,
+      "location": getRandomLocation(),
       "name": name,
-      "role": randomRole,
+      "role": getRandomRole(),
       "skill-set":[
         {
           "name":"Android",
@@ -46,8 +47,8 @@ function generateStaffs()
         }
       ],
       "travel-preference": {
-        "Domestic": false,
-        "International": false
+        "Domestic": randomBoolean(),
+        "International": randomBoolean()
       }
     })
   }
