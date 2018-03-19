@@ -15,7 +15,7 @@ function getRandomLocation()
 function getRandomRole()
 {
   var roles = ["QA", "BA", "DEV", "PM"]
-  
+
   return faker.random.arrayElement(roles);
 }
 function randomBoolean()
@@ -26,33 +26,33 @@ function randomBoolean()
 function generateStaffs()
 {
   var staffs = []
-  
-  for(var id = 0; id < 500; id++)
+
+  for(var id = 0; id < 10; id++)
   {
     var name = faker.name.firstName();
-        
+
     staffs.push({
       "id": id,
       "location": getRandomLocation(),
       "name": name,
       "role": getRandomRole(),
-      "skill-set":[
+      "skillSet":[
         {
           "name":"Android",
-          "Rating": randomNumberBetween1To5()
+          "rating": randomNumberBetween1To5()
         },
         {
           "name":"Java",
-          "Rating": randomNumberBetween1To5()
+          "rating": randomNumberBetween1To5()
         }
       ],
-      "travel-preference": {
-        "Domestic": randomBoolean(),
-        "International": randomBoolean()
+      "travelPreference": {
+        "domestic": randomBoolean(),
+        "international": randomBoolean()
       }
     })
   }
-  
+
   return {"staffs": staffs}
 }
 
