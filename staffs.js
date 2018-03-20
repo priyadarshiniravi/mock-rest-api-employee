@@ -27,7 +27,7 @@ function generateStaffs()
 {
   var staffs = []
 
-  for(var id = 0; id < 10; id++)
+  for(var id = 0; id < 1000; id++)
   {
     var name = faker.name.firstName();
 
